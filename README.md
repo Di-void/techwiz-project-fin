@@ -51,6 +51,14 @@ This is a solution to the Thrift Fashion Web Application Project from the yearly
     Once all that is set up. You are ready to run the app. Open the terminal and navigate to the project folder's directory.
     After this is done enter this in your terminal:
 
+    To startup the application
+
+    ```
+    php artisan serve
+    ```
+
+    Then to seed the database input:
+
     ```
     php artisan migrate:fresh --seed
     ```
