@@ -20,7 +20,7 @@ app.config(function($routeProvider) {
     })
     .when('/checkout', {
         title: 'Checkout - ThriftFashion',
-        templateUrl: '../Checkout.htm'
+        templateUrl: '../cart.htm'
     })
     .otherwise({
         redirectTo: '/'
