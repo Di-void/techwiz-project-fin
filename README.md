@@ -568,10 +568,10 @@ If user has placed some orders, it will return a response like **this**:
 
 ### Built With
 
--   e.g HTML5
--   CSS
-
-Here we list out the technologies we use in developing the project
+-   Php
+-   Laravel 8
+-   Laravel Sanctum for Authentication
+-   [Faker Library](https://github.com/fzaninotto/Faker#fakerprovideren_usaddress)
 
 ### Acknowledgements
 
