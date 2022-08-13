@@ -564,18 +564,6 @@ If user has placed some orders, it will return a response like **this**:
 | (localhost)/api/v1/users/orders/{id}   |      DELETE      |
 | (localhost)/v1/users/orders/{id}       |       GET        |
 
-### Port Settings
-
-We can provide our env file configuration and port settings here.
-
-## Source Code
-
-Here we provide a link to our github Repo for the project OR we paste screenshots of our codebase
-
-## Test Data Used in the Project
-
-Open for suggestions
-
 ## Processes
 
 ### Built With
@@ -585,10 +573,6 @@ Open for suggestions
 
 Here we list out the technologies we use in developing the project
 
-### Project installation instructions
-
-If any we write a paragraph and list out intructions for the project installation steps
-
 ### Acknowledgements
 
-Here we can give a hat tip to all the participants in this project. We can list out all the people that participated in this project and eventually give props to the TECHWIZ COMP ORGANIZERs
+I want to thank the organizers of this competiton and Aptech Computer Education for giving us the opportunity to partake in it. I have really learned a lot while developing this application.
