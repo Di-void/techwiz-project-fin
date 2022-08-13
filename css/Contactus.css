@@ -1,0 +1,51 @@
+.container{
+    margin: 10% auto;
+}
+.container form{
+    display:flex;
+    flex-direction: column;
+    padding:5px;
+    width:40%;
+    margin: auto;
+}
+h2{
+    top:10%;
+    left:42%;
+    text-align: center;
+}
+input{
+    padding:2px;
+    margin-bottom:10px;
+    border:none;
+    background-color:whitesmoke;
+    height:45px;
+    border-radius:4px;
+}
+.btn{
+  top:50%;
+  left:34%;
+  height:45px;
+  width:100%;
+  font-weight: bold;
+  color:white;
+  background-color: black;
+  border:none;
+  border-radius:4px;
+}
+.btn:hover{
+    background-color:black;
+}
+#sub{
+    height:15vh;
+}
+@media screen and (max-width: 769px) {
+    .container form {
+        width: 91%;
+    }
+    #fullname, #sub, #addemail {
+        width: 100%;
+    }
+    .products-head button {
+        margin-left: 0;
+    }
+}

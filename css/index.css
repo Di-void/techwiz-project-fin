@@ -1,0 +1,221 @@
+
+body {
+    background-color: #FFFFFF;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.col-6 {
+    width: 50%;
+}
+.brand {
+    width: 254px;
+    height: 93px;
+}
+.mobile-container {
+    display: none;
+}
+.menubtn {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 911px;
+    top: 33px;
+    cursor: pointer;
+}
+.nav-menu {
+    display: none;
+}
+.nav-menu.visible {
+    display: block;
+    list-style: none;
+    width: 308px;
+    height: 252px;
+    left: 779px;
+    top: 90px;
+    background: #F1F1F1;
+    box-shadow: -3px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    padding: 0;
+    text-align: center;
+}
+.cancelmenu { 
+    display: none;
+}
+.nav-menu li {
+    width: 279px;
+    height: 31px;
+    left: 887px;
+    top: 125px;
+    margin: 0 auto 13px;
+}
+.nav-menu li a {
+    text-decoration: none;
+    font-family: 'Average Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+.nav-menu li:nth-child(3) {
+    left: 794px;
+    top: 173px;
+    background-color: #E5E5E5;
+}
+.nav-menu li:nth-child(4) {
+    left: 793px;
+    top: 244px;
+    background-color: #E5E5E5;
+}
+.nav-menu li:nth-child(5) {
+    top: 315px;
+}
+.productLink {
+    position: absolute;
+    width: 71px;
+    height: 26px;
+    left: 989px;
+    top: 40px;
+    font-family: 'Average Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: black;
+    text-decoration: none;
+}
+.loginbtn {
+    position: absolute;
+    width: 92px;
+    height: 38px;
+    left: 1093px;
+    top: 36px;
+    font-family: 'Average Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 4px 24px 8px 21px;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+}
+.cartbtn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 1205px;
+    top: 40px;
+}
+nav.col-8.nav-links a {
+    margin-left: 30px;
+}
+input[type="search"] {
+    width: auto;
+}
+footer {
+    height: 355px;
+    left: 0px;
+    top: 750px;
+    background: #F8F9FB;
+    border-top: 1px solid #010203;
+}
+.footer-brand {
+    margin-top: 16px;
+    margin-left: 14px;
+}
+footer h3 {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #010203;
+}
+.row {
+    margin: 0;
+}
+.experience {
+    margin-left: 92px;
+}
+.experience textarea {
+    width: 605px;
+    height: 120px;
+    left: 360px;
+    top: 799px;
+    background: #F8F9FB;
+    border: 1px solid #010203;
+}
+input[type="submit"] {
+    display: block;
+    width: 194px;
+    height: 72px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background: #010203;
+    border: none;
+}
+.others a {
+    font-family: 'Average Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+footer {
+    margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+    .mobile-container {
+        display: flex;
+        background: black;
+    }
+    .desktop-container {
+        display: none;
+    }
+    .nav-menu.visible {
+        position: fixed;
+        left: 4%;
+        width: 90%;
+    }
+    footer {
+        height: 100%;
+    }
+    footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .experience {
+        width: 90%;
+        margin: auto;
+    }
+    .experience textarea {
+        width: 100%;
+    }
+    input[type="submit"] {
+        width: 100%;
+    }
+    footer h3 {
+        text-transform: uppercase;
+        font-size: 17px;
+    }
+    .menubtn {
+        left: 90%;
+    }
+    .productLink {
+        left: 71%;
+    }
+    .loginbtn {
+        left: 83%;
+    }
+    .cartbtn {
+        left: 97%;
+    }
+}

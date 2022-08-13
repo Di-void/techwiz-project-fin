@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Basket Ahbi Cart Anyone shaaaa</title>
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+      
+      <style>
+        
+
+
+html,
+html a {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+body {
+ 
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+  margin: 0 auto;
+}
+
+a {
+  border: 0 none;
+  outline: 0;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+p {
+  margin: 0.75rem 0 0;
+}
+
+h1 {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  color:black
+}
+
+input,
+button {
+  border: 0 none;
+  outline: 0 none;
+}
+button {
+  background-color: #666;
+  color: #fff;
+}
+
+button:hover,
+button:focus {
+  background-color: #555;
+}
+
+img,
+.basket-labels,
+.basket-product {
+  width: 100%;
+}
+
+input,
+button,
+.basket,
+.basket-labels,
+.item,
+.price,
+.quantity,
+.subtotal,
+.basket-product,
+.product-image,
+.product-details {
+  float: left;
+}
+
+.price:before,
+.subtotal:before,
+.subtotal-value:before,
+.total-value:before{
+  content: 'N';
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  clear: both;
+  font-size: 0.75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 1rem 0;
+  width: 960px;
+}
+
+.basket,
+aside {
+  padding: 0 1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.basket {
+  width: 70%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3125rem;
+}
+
+.basket-labels {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 1.625rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: #111;
+  display: inline-block;
+  padding: 0.625rem 0;
+}
+
+li.price:before,
+li.subtotal:before {
+  content: '';
+}
+
+.item {
+  width: 55%;
+}
+
+.price,
+.quantity,
+.subtotal {
+  width: 15%;
+}
+
+.subtotal {
+  text-align: right;
+}
+
+.remove {
+  bottom: 1.125rem;
+  float: right;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  width: 45%;
+}
+
+.remove button {
+  background-color: transparent;
+  color: #777;
+  float: none;
+  border:1px solid #777;
+  border-radius:4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.item-heading {
+  padding-left: 4.375rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.basket-product {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.product-image {
+  width: 35%;
+}
+
+.product-details {
+  width: 65%;
+}
+
+.product-frame {
+  border: 1px solid #aaa;
+}
+
+.product-details {
+  padding: 0 1.5rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.quantity-field {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 0.625rem;
+  padding: 2px;
+  width: 3.75rem;
+}
+
+aside {
+  float: right;
+  position: relative;
+  width: 30%;
+}
+
+.summary {
+  border: 1px solid #aaa;
+  padding: 1rem;
+  position: fixed;
+  width: 250px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.summary-total-items {
+  color: #666;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.summary-subtotal,
+.summary-total {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  clear: both;
+  margin: 1rem 0;
+  overflow: hidden;
+  padding: 0.5rem 0;
+}
+
+.subtotal-title,
+.subtotal-value,
+.total-title,
+.total-value{
+  color: #111;
+  float: left;
+  width: 50%;
+}
+.summary-delivery {
+  padding-bottom: 3rem;
+}
+
+.subtotal-value,
+.total-value {
+  text-align: right;
+}
+
+.total-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.summary-checkout {
+  display: block;
+}
+
+.checkout-cta {
+  display: block;
+  float: none;
+  font-size: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.625rem 0;
+  width: 100%;
+}
+
+.summary-delivery-selection {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  display: block;
+  font-size: 0.625rem;
+  height: 34px;
+  width: 100%;
+}
+form{
+  margin:20%;
+            }
+            .h1{
+              font-size:1.5rem;
+            }
+            h3{
+                color: #aaa;
+                font-size: 0.9rem;
+                position:absolute;
+                top:25%;
+                left:30%;
+            }
+            h2{
+              font-size:1rem;
+                position:absolute;
+                left:10%;
+            }
+            .info{
+                border:none;
+                background-color: whitesmoke;
+                height:4vh;
+            }
+            label{
+                font-weight:bold;
+            }
+            #numdet,
+            #numdet2{
+              width:50%;
+            }
+            #cardname{
+              width:120%;
+            }
+            .btn{
+              position: absolute;
+              top:80%;
+              left:5%;
+              height:6vh;
+              width:90%;
+              font-weight: bold;
+              color:white;
+              background-color: rgb(156, 144, 144);
+              border:none;
+            }
+            #modal{
+              background-color: white;
+              height:60vh;
+              padding:7px;
+            }
+            .close{
+              position:absolute;
+              left:95%;
+              top:1%;
+              font-weight: bolder;
+              font-size:2rem;
+            }
+            .infocontnt{
+              display:flex;
+              flex-direction: column;
+            }
+@media screen and (max-width: 640px) {
+  aside,
+  .basket,
+  .summary,
+  .item,
+  .remove {
+    width: 100%;
+  }
+  .basket-labels {
+    display: none;
+  }
+  .item {
+    margin-bottom: 1rem;
+  }
+  .product-image {
+    width: 40%;
+  }
+  .product-details {
+    width: 60%;
+  }
+  .price,
+  .subtotal {
+    width: 33%;
+  }
+  .quantity {
+    text-align: center;
+    width: 34%;
+  }
+  .quantity-field {
+    float: none;
+  }
+  .remove {
+    bottom: 0;
+    text-align: left;
+    margin-top: 0.75rem;
+    position: relative;
+  }
+  .remove button {
+    padding: 0;
+  }
+  .summary {
+    margin-top: 1.25rem;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 960px) {
+  aside {
+    padding: 0 1rem 0 0;
+  }
+  .summary {
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  main {
+    width: 100%;
+  }
+  .product-details {
+    padding: 0 1rem;
+  }
+}
+      </style>
+    </head>
+    
+    <body>
+      <main>
+        <div class="basket">
+          <h1><center>CART</center></h1>
+          <div class="basket-labels">
+            <ul>
+              <li class="item item-heading">Item</li>
+              <li class="price">Price</li>
+              <li class="quantity">Quantity</li>
+              <li class="subtotal">Subtotal</li>
+            </ul>
+          </div>
+          <div class="basket-product">
+            <div class="item">
+              <div class="product-image">
+                <img src="your work not mine" alt="Placeholder Image 2" class="product-frame">
+              </div>
+              <div class="product-details">
+                <h1><strong><span class="item-quantity"> </strong> your work not mine</span></h1>
+                <p><strong>items description</strong></p>
+
+              </div>
+            </div>
+            <div class="price">26.00</div>
+            <div class="quantity">
+              <input type="number" value="4" min="1" class="quantity-field">
+            </div>
+            <div class="subtotal">104.00</div>
+            <div class="remove">
+              <button>Remove</button>
+            </div>
+          </div>
+          <div class="basket-product">
+            <div class="item">
+              <div class="product-image">
+                <img src="your work not mine,i don try" alt="Placholder Image 2" class="product-frame">
+              </div>
+              <div class="product-details">
+                <h1><strong><span class="item-quantity"> </strong> same here..lol</span></h1>
+                <p><strong>items description</strong></p>
+              </div>
+            </div>
+            <div class="price">26.00</div>
+            <div class="quantity">
+              <input type="number" value="1" min="1" class="quantity-field">
+            </div>
+            <div class="subtotal">26.00</div>
+            <div class="remove">
+              <button>Remove</button>
+            </div>
+          </div>
+        </div>
+        <aside>
+          <div class="summary">
+            <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+            <div class="summary-subtotal">
+              <div class="subtotal-title">Subtotal</div>
+              <div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
+            </div>
+            <div class="summary-total">
+              <div class="total-title">Total</div>
+              <div class="total-value final-value" id="basket-total">130.00</div>
+            </div>
+            <div class="summary-checkout">
+              <button class="checkout-cta" data-toggle="modal" data-target="#mymodal">Go to Secure Checkout</button>
+            </div>
+          </div>
+        </aside>
+      </main>
+      <div class="modal" id="mymodal">
+        <div class="modal-dialog" id="modal">
+          <div class="modal-content">
+          <center><h1 class="h1">Checkout</h1></center>
+          <button class="close" data-dismiss="modal">&times;</button>
+        <form>
+            <center><h3>*Please provide the following*</h3></center>
+            <div class="infocontnt">
+              <label for="" class="don">Card.Number</label>  
+              <input type="text" class="info" id="cardname"/>
+              <label for=""   class="tomi">Expires</label>  
+               <input type="text" class="info" id="numdet" placeholder="mm/yy"/>  
+              <label for="" class="tomi">cvc code</label> 
+              <input type="text" class="info" id="numdet2" placeholder="XXX"/>
+        </div>
+            <button class="btn">CHECKOUT</button>         
+        </div> 
+    </form>
+    </div>
+        </div>
+      </div>
+<script src="jquery-3.6.0.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="angular.js"></script>
+<script>
+var butn,inform,inform2,form;
+butn=$(".btn");
+inform=$("#cardname");
+inform2=$("#numdet");
+form=$("#numdet2")
+    /*Set validations*/
+butn.click(function(){
+	if((inform.val() =="")){
+		alert(" Please fill the details");
+	} 
+  else if((inform2.val()=="")){
+    alert("Please provide your details");
+  }
+  else if((form.val()=="")){
+    alert("Please provide your details");
+  }
+	else{
+		alert("Thanks so much!!!");
+	}
+});
+/* Set values + misc */
+var fadeTime = 300;
+
+/* Assign actions */
+$('.quantity input').change(function() {
+  updateQuantity(this);
+});
+
+$('.remove button').click(function() {
+  removeItem(this);
+});
+
+$(document).ready(function() {
+  updateSumItems();
+});
+
+
+/* Recalculate cart */
+function recalculateCart(onlyTotal) {
+  var subtotal = 0;
+
+  /* Sum up row totals */
+  $('.basket-product').each(function() {
+    subtotal += parseFloat($(this).children('.subtotal').text());
+  });
+
+  /* Calculate totals */
+  var total = subtotal;
+
+  /*If switch for update only total, update only total display*/
+  if (onlyTotal) {
+    /* Update total display */
+    $('.total-value').fadeOut(fadeTime, function() {
+      $('#basket-total').html(total.toFixed(2));
+      $('.total-value').fadeIn(fadeTime);
+    });
+  } else {
+    /* Update summary display. */
+    $('.final-value').fadeOut(fadeTime, function() {
+      $('#basket-subtotal').html(subtotal.toFixed(2));
+      $('#basket-total').html(total.toFixed(2));
+      if (total == 0) {
+        $('.checkout-cta').fadeOut(fadeTime);
+      } else {
+        $('.checkout-cta').fadeIn(fadeTime);
+      }
+      $('.final-value').fadeIn(fadeTime);
+    });
+  }
+}
+
+/* Update quantity */
+function updateQuantity(quantityInput) {
+  /* Calculate line price */
+  var productRow = $(quantityInput).parent().parent();
+  var price = parseFloat(productRow.children('.price').text());
+  var quantity = $(quantityInput).val();
+  var linePrice = price * quantity;
+
+  /* Update line price display and recalc cart totals */
+  productRow.children('.subtotal').each(function() {
+    $(this).fadeOut(fadeTime, function() {
+      $(this).text(linePrice.toFixed(2));
+      recalculateCart();
+      $(this).fadeIn(fadeTime);
+    });
+  });
+
+  productRow.find('.item-quantity').text(quantity);
+  updateSumItems();
+}
+
+function updateSumItems() {
+  var sumItems = 0;
+  $('.quantity input').each(function() {
+    sumItems += parseInt($(this).val());
+  });
+  $('.total-items').text(sumItems);
+}
+
+/* Remove item from cart */
+function removeItem(removeButton) {
+  /* Remove row from DOM and recalc cart total */
+  var productRow = $(removeButton).parent().parent();
+  productRow.slideUp(fadeTime, function() {
+    productRow.remove();
+    recalculateCart();
+    updateSumItems();
+  });
+}
+</script>
+    </body>
+    
+    </html> 

@@ -1,0 +1,58 @@
+{
+	"productList": [
+	   {
+		   "id": 0,
+		   "name": "Star Dome",
+		   "description": "Tents",
+		   "line": "Men",
+		   "price": 20,
+		   "img": "img/shirt1.jpeg",
+		   "discount": 20
+	   },
+	   {
+		"id": 1,
+		   "name": "Hibernator Lite",
+		   "description": "Sleeping Bags",
+		   "line": "men",
+		   "price": 20,
+		   "img": "img/shirt1.jpeg",
+		   "discount": 20
+	   },
+	   {
+		"id": 2,
+		   "name": "Husky Rope 50",
+		   "description": "Rope",
+		   "line": "women",
+		   "price": 20,
+		   "img": "img/Ladies-Summer-V-Necked-Dress-Fashion-Slim-Fit-Dress-for-Party-High-Quality-Elegant-Dress.jpeg",
+		   "discount": 20
+	   },
+	   {
+		"id": 3,
+		   "name": "Hailstorm Steel Irons",
+		   "description": "Irons",
+		   "line": "women",
+		   "price": 20,
+		   "img": "img/Ladies-Summer-V-Necked-Dress-Fashion-Slim-Fit-Dress-for-Party-High-Quality-Elegant-Dress.jpeg",
+		   "discount": 20
+	   },
+	   {
+		"id": 4,
+		   "name": "TrailChef Water Bag",
+		   "description": "Cooking Gear",
+		   "line": "men",
+		   "price": 40,
+		   "img": "img/shirt1.jpeg",
+		   "discount": 20
+	   },
+	   {
+		"id": 5,
+		   "name": "EverGlow Butane",
+		   "description": "Lanterns",
+		   "line": "women",
+		   "price": 40,
+		   "img": "img/Ladies-Summer-V-Necked-Dress-Fashion-Slim-Fit-Dress-for-Party-High-Quality-Elegant-Dress.jpeg",
+		   "discount": 20
+	   }
+	]
+}
