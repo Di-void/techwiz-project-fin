@@ -44,7 +44,7 @@ This is a solution to the Thrift Fashion Web Application Project from the yearly
 
     You would then enter the new .env file you created and set your new DB_DATABASE to the name of your newly created database.
 
-    \*\*\*Note: This project uses mysql so you can leave it at the default DB_CONNECTION value.
+    ***Note: This project uses mysql so you can leave it at the default DB_CONNECTION value.***
 
     ![](./screenshot4.png)
 
@@ -113,31 +113,6 @@ This endpoint will fetch all products available in the database and return a res
         "stock": 19,
         "image": "https://via.placeholder.com/200x200.png/009966?text
         =reiciendis",
-        "created_at": "2022-08-12T19:37:47.000000Z",
-        "updated_at": "2022-08-12T19:37:47.000000Z"
-    },
-    {
-        "id": 3,
-        "product_name": "AntiqueWhite",
-        "description": "Ut minima eum vitae sed et cumque. Laborum
-        placeat nemo distinctio nostrum pariatur et. Vel aliquid
-        blanditiis labore illum sed voluptatem.",
-        "category": "ut",
-        "price": "94.75",
-        "stock": 11,
-        "image": "https://via.placeholder.com/200x200.png/00cc22?text=odio",
-        "created_at": "2022-08-12T19:37:47.000000Z",
-        "updated_at": "2022-08-12T19:37:47.000000Z"
-    },
-    {
-        "id": 4,
-        "product_name": "Wheat",
-        "description": "Voluptas deserunt perspiciatis voluptatum
-        veritatis. Sed vitae vero id est perspiciatis quia ducimus quia.",
-        "category": "voluptate",
-        "price": "56.89",
-        "stock": 6,
-        "image": "https://via.placeholder.com/200x200.png/001100?text=aut",
         "created_at": "2022-08-12T19:37:47.000000Z",
         "updated_at": "2022-08-12T19:37:47.000000Z"
     },

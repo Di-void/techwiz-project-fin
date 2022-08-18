@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 // PUBLIC ROUTES
 Route::get('/v1/products', [\App\Http\Controllers\ProductsController::class, 'index']);
 Route::get('/v1/products/{id}', [\App\Http\Controllers\ProductsController::class, 'show']);
+Route::get('/v1/products/search/{name}', [\App\Http\Controllers\ProductsController::class, 'search']);
 Route::post('/v1/users/register', [\App\Http\Controllers\AuthController::class, 'register']);
 Route::post('/v1/users/login', [\App\Http\Controllers\AuthController::class, 'login']);
 Route::post('v1/feedbacks', [\App\Http\Controllers\FeedbacksController::class, 'addFeedback']);
